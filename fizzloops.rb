@@ -23,3 +23,27 @@ arr.map do |n|
 arr.each do |n|
   fizzbuzz(n)
  end
+
+fizzbuzzproc = proc {
+  if n % 3 == 0 && n % 5 == 0
+     puts "FizzBuzz"
+   elsif n % 3 == 0
+    puts "Fizz"
+   elsif n % 5 == 0
+     puts "Buzz"
+   else
+     puts n
+   end
+}
+
+fizzbuzzlambda = lambda {
+ if n % 3 == 0 && n % 5 == 0
+     puts "FizzBuzz"
+   elsif n % 3 == 0
+    puts "Fizz"
+   elsif n % 5 == 0
+     puts "Buzz"
+   else
+     puts n
+   end
+}

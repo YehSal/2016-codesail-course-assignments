@@ -10,14 +10,16 @@ def fizzbuzz(n)
    end  
  end  
 
-upto.1000 do |n|
+arr = Array(1..1000)
+
+1.upto.1000 do |n|
   fizzbuzz(n)
  end
 
-array.map do |n|
+arr.map do |n|
   fizzbuzz(n)
  end
 
-array.each do |n|
+arr.each do |n|
   fizzbuzz(n)
  end

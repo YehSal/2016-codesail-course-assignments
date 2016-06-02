@@ -18,11 +18,21 @@ class Hospitals < Buildings
     attr_accessor :num_patients
     def initialize(num_patients, num_windows, num_walls, num_stories, building_materials, colors, has_aircon)
         super(num_windows, num_walls, num_stories, building_materials, colors, has_aircon)
-        @num_patients = num_patients
-    end
+            @num_patients = num_patients
+        end
+
+        def gimme_patients
+            puts "There are " + num_patients.to_s + " patients in this hospital"
+        end
+
+        def self.whatsup
+            puts "We save people in this b*****"
+        end
+
 end
 
 new_hospital = Hospitals.new(333, 1, 3, 5, ['Rock', 'Stones'], ['White', 'Black'], true)
 
 new_hospital.num_patients
 new_hospital.number_of_windows
+new_hospital.gimme_patients

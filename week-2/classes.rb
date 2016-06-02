@@ -13,3 +13,16 @@ end
 
 new_building = Buildings.new(3, 4, 3, ['Rocks', 'Stones'], ['Blue', 'Pink'], true)
 new_building2 = Buildings.new(11, 5, 66, ['Gold', 'Diamond'], ['Black', 'White'], false)
+
+class Hospitals < Buildings
+    attr_accessor :num_patients
+    def initialize(num_patients, num_windows, num_walls, num_stories, building_materials, colors, has_aircon)
+        super(num_windows, num_walls, num_stories, building_materials, colors, has_aircon)
+        @num_patients = num_patients
+    end
+end
+
+new_hospital = Hospitals.new(333, 1, 3, 5, ['Rock', 'Stones'], ['White', 'Black'], true)
+
+new_hospital.num_patients
+new_hospital.number_of_windows
